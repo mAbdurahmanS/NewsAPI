@@ -7,6 +7,7 @@
     android:fitsSystemWindows="false"
     tools:context=".DetailActivity">
 
+    //ini untuk AppBarLayout
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="280dp"
@@ -22,6 +23,7 @@
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
+            //ini untuk ImageView
             <ImageView
                 android:id="@+id/img_toolbar"
                 android:layout_width="match_parent"
@@ -31,6 +33,7 @@
                 app:layout_collapseMode="parallax"
                 tools:srcCompat = "@tools:sample/avatars"/>
 
+            //ini untuk MaterialToolbar
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/tool_bar"
                 android:layout_width="match_parent"
@@ -40,16 +43,20 @@
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
+    //ini untuk nge scroll
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
+        //ini constraintlayout
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp">
+            
+            //Ini textView
             <TextView
                 android:id="@+id/txt_date"
                 android:layout_width="0dp"
@@ -62,6 +69,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            //ini TextView
             <TextView
                 android:id="@+id/txt_content"
                 android:layout_width="0dp"
